@@ -16,11 +16,14 @@ header .container {
   justify-content: space-between;
 }
 
+header ul {
+  display: flex;
+  gap: 16px;
+}
 header li {
   display: inline;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
-  margin-left: 16px;
 }
 
 header li a {
@@ -29,14 +32,16 @@ header li a {
 }
 
 .container {
-  width: 1366px;
+  width: 100vw;
   margin: 0 auto;
+  padding: 0 8px;
 }
 
 .articles {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  gap: 2vw;
 }
 
 .articles article img {
@@ -45,7 +50,7 @@ header li a {
 }
 
 .articles article {
-  width: 30%;
+  flex: 1;
 }
 
 section {
@@ -132,3 +137,22 @@ Seletor{
 
 * estiliza tudo que não tiver ID ou classe especificado
 */
+
+.header--Container {
+  padding: 0 4px;
+}
+
+@media screen and (max-width: 768px) {
+  .articles {
+    flex-direction: column;
+  }
+
+  .header--Container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .header--Container li {
+    font-size: 14px;
+  }
+}
