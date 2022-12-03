@@ -1,193 +1,111 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meu portal de notícias</title>
     <link rel="stylesheet" href="./main.css" />
-</head>
-<body>
+    <script type="text/javascript" src="./news.js"></script>
+  </head>
+  <body>
     <header>
-        <div class="container">
-            <h1>Meu portal de notícias</h1>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#sports" title="Ir para a seção de esportes">Esportes</a>
-                    </li>
-                    <li>
-                        <a href="#economy" title="Ir para a seção de notícias">Economia</a>
-                    </li>
-                    <li>
-                        <a href="#entretenimento" title="Ir para a seção de entretenimento">Entretenimento</a>
-                    </li>
-                    <li>
-                        <a href="#tecnologia" title="Ir para a seção de tecnologia">Tecnologia</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+      <div class="container">
+        <h1>Meu portal de notícias</h1>
+        <nav>
+          <ul>
+            <li>
+              <a href="#sports" title="Ir para a seção de esportes">Esportes</a>
+            </li>
+            <li>
+              <a href="#economy" title="Ir para a seção de notícias"
+                >Economia</a
+              >
+            </li>
+            <li>
+              <a href="#entertainment" title="Ir para a seção de entretenimento"
+                >Entretenimento</a
+              >
+            </li>
+            <li>
+              <a href="#tecnologia" title="Ir para a seção de tecnologia"
+                >Tecnologia</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <section id="sports"> 
-        <div class="container">
-            <h2>Esportes</h2>
-            <div class="articles">
-                <article>
-                    <img src="./imagens/futebol.jpg" alt="Bola de futebol no gramado" />
-                    <header>
-                        <time class="creation-date">13/07/2022 às 12:35</time>
-                    </header>
-                    <h3>Grande clássico na noite de hoje</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
-                    </p>
-                    <a href="#" title="Leia a notícia completa">Ler mais</a>
-                </article>
-                <article>
-                    <img src="./imagens/futebol-americano.jpg" alt="Jogador de futebol americano correndo com a bola na mão" />
-                    <header>
-                        <time>13/07/2022 às 12:35</time>
-                    </header>
-                    <h3>Noite do Superbowl</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
-                    </p>
-                    <a href="#" title="Leia a notícia completa">Ler mais</a>
-                </article>
-                <article>
-                    <img src="./imagens/basquete.jpg" title="Vista aérea de uma quadra de basquete" />
-                    <header>
-                        <time>13/07/2022 às 12:35</time>
-                    </header>
-                    <h3>Notícia sobre a NBA</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
-                    </p>
-                    <a href="#" title="Leia a notícia completa">Ler mais</a>
-                </article>
-            </div>
-        </div>
+    <section id="sports">
+      <div class="container">
+        <h2>Esportes</h2>
+        <div class="articles"></div>
+      </div>
     </section>
     <section id="economy">
-        <div class="container">
-            <h2>Economia</h2>
-            <div class="articles">
-                <article>
-                    <img src="./imagens/dolares.jpg" alt="Muitos dólares" />
-                    <header>
-                        <time>13/07/2022 às 12:35</time>
-                    </header>
-                    <h3>Dólar em alta de 0.50%</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
-                    </p>
-                    <a href="#" title="Leia a notícia completa">Ler mais</a>
-                </article>
-                <article>
-                    <img src="./imagens/euro.jpg" alt="Várias notas de euro" />
-                    <header>
-                        <time>13/07/2022 às 12:35</time>
-                    </header>
-                    <h3>Euro em queda de 0.40%</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
-                    </p>
-                    <a href="#" title="Leia a notícia completa">Ler mais</a>
-                </article>
-                <article>
-                    <img src="./imagens/petroleo.jpg" alt="Extração de petróleo" />
-                    <header>
-                        <time>13/07/2022 às 12:35</time>
-                    </header>
-                    <h3>Alta no preço do barril do petróleo</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
-                    </p>
-                    <a href="#" title="Leia a notícia completa">Ler mais</a>
-                </article>
-            </div>
-        </div>
+      <div class="container">
+        <h2>Economia</h2>
+        <div class="articles"></div>
+      </div>
     </section>
-    <section id="entretenimento">
-        <div class="container">
-            <h2>Entretenimento</h2>
-            <div class="articles">
-                <article>
-                    <img src="./imagens/Harry.jpg" alt="Poster Harry Potter" />
-                    <header>
-                        <time>15/11/2022 às 11:43</time>
-                    </header>
-                    <h3>Harry Potter de volta aos cinemas</h3>
-                    <p>
-                        Em comemoração dos 20 anos de lançamento, os filmes serão reexibidos nos cinemas.
-                    </p>
-                    <a href="#" title="Leia a notícia completa">Ler mais</a>
-                </article>
-                <article>
-                    <img src="./imagens/Matrix.jpg" alt="Poster Matrix" />
-                    <header>
-                        <time>02/12/2022 às 13:22</time>
-                    </header>
-                    <h3>Filme de Matrix de 1999 é melhor?</h3>
-                    <p>
-                        Usuarios da internet apontam que filme de 1999 é melhor que o recem lançado Matrix Resurrections.
-                    </p>
-                    <a href="#" title="Leia a notícia completa">Ler mais</a>
-                </article>
-                <article>
-                    <img src="./imagens/Senhor.jpg.jpeg" alt="Poster Senhor dos Aneis" />
-                    <header>
-                        <time>17/08/2022 às 02:06</time>
-                    </header>
-                    <h3>Nova serie sobre Senhor dos Aneis é lançada</h3>
-                    <p>
-                        Nova serie baseada em livros e filmes de senhor dos aneis é lançada pela HBO.
-                    </p>
-                    <a href="#" title="Leia a notícia completa">Ler mais</a>
-                </article>
-            </div>
-        </div>
+    <section id="entertainment">
+      <div class="container">
+        <h2>Entretenimento</h2>
+        <div class="articles"></div>
+      </div>
     </section>
-    <section id="tecnologia">
-        <div class="container">
-            <h2>Tecnologia</h2>
-            <div class="articles">
-                <article>
-                    <img src="./imagens/Xiaomi.jfif" alt="Xiaomi Mi 11 ultra e Mi 12 ultra" />
-                    <header>
-                        <time>10/11/2022 às 19:15</time>
-                    </header>
-                    <h3>Qual celular da Xiaomi é melhor? Mi 11 Ultra VS Mi 12 Ultra</h3>
-                    <p>
-                        Xiaomi recentemente lança novo flagship. Mas sera que ele é melhor que o seu antecessor?
-                    </p>
-                    <a href="#" title="Leia a notícia completa">Ler mais</a>
-                </article>
-                <article>
-                    <img src="./imagens/AMD.jpg" alt="Anuncio AMD" />
-                    <header>
-                        <time>16/10/2022 às 16:25</time>
-                    </header>
-                    <h3>AMD anuncia nova GPU RX 7900XT</h3>
-                    <p>
-                        Neste més a AMD anunciou a chegada das novas placas de video da serie 7000, com tecnologia RDNA3. Em coletiva foi demonstrado modelo de referencia e finalmente divulgado dados a respeito de perfomance.
-                    </p>
-                    <a href="#" title="Leia a notícia completa">Ler mais</a>
-                </article>
-                <article>
-                    <img src="./imagens/nvidia.jpg" alt="Plug de alimentação Nvidia" />
-                    <header>
-                        <time>13/09/2022 às 16:45</time>
-                    </header>
-                    <h3>Plugs de alimentação da Nvidia causam problemas a usuarios</h3>
-                    <p>
-                        Recentemente varios usuarios de placas de video da Nvidia da nova geração estão alegando problemas com pino de alimentação. Problema causa pinos a aquecerem e pegarem fogo e é mais recorrente em RTX 4090.
-                    </p>
-                    <a href="#" title="Leia a notícia completa">Ler mais</a>
-                </article>
-            </div>
-        </div>
+    <section id="technology">
+      <div class="container">
+        <h2>Tecnologia</h2>
+        <div class="articles"></div>
+      </div>
     </section>
-</body>
+    <script>
+      const articleTemplateFunction = ({
+        picture,
+        time,
+        headline,
+        text,
+        cta,
+      }) => `
+<article>
+    <img src="${picture.src}" alt="${picture.alt}" />
+    <header>
+        <time>${time}</time>
+    </header>
+    <h3>${headline}</h3>
+    <p>
+        ${text}
+    </p>
+    <a href="${cta.href}" title="${cta.title}">Ler mais</a>
+</article>`;
+
+      const categories = responseFromBackend
+        .map(({ type }) => type)
+        .reduce(
+          (acc, curr) => (acc.indexOf(curr) === -1 ? acc.concat(curr) : acc),
+          []
+        );
+
+      const groupNewsByCategories = categories.reduce(
+        (acc, curr) => ({
+          ...acc,
+          [curr]: responseFromBackend.filter(({ type }) => type === curr),
+        }),
+        {}
+      );
+
+      // Magic
+      // As long as the section names matches the category names, this will work
+      const sectionIds = Array.from(document.querySelectorAll("section"))
+        .map((el) => el.getAttribute("id"))
+        .forEach((id) => {
+          const section = document.getElementById(id);
+          const targetArticle = section.querySelector("div.articles");
+          const news = groupNewsByCategories[id];
+          const articles = news.map(articleTemplateFunction).join("");
+          targetArticle.innerHTML = articles;
+        });
+    </script>
+  </body>
 </html>
