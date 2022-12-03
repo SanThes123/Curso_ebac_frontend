@@ -61,27 +61,32 @@
       </div>
     </section>
     <script>
+      // Template functions are useful when you want to create
+      // static HTML elements based on dynamic content.
       const articleTemplateFunction = ({
-        picture,
+        picture: { src, alt },
         time,
         headline,
         text,
-        cta,
+        cta: { href, title },
       }) => `
-<article>
-    <img src="${picture.src}" alt="${picture.alt}" />
-    <header>
-        <time>${time}</time>
-    </header>
-    <h3>${headline}</h3>
-    <p>
-        ${text}
-    </p>
-    <a href="${cta.href}" title="${cta.title}">Ler mais</a>
-</article>`;
+      <article>
+          <img src="${src}" alt="${alt}" />
+          <header>
+              <time>${time}</time>
+          </header>
+          <h3>${headline}</h3>
+          <p>
+              ${text}
+          </p>
+          <a href="${href}" title="${title}">Ler mais</a>
+      </article>`;
 
+      // the `responseFromBackend` variable is a mock of the
+      // response from the backend this is coming from
+      // "news.js" file
       const categories = responseFromBackend
-        .map(({ type }) => type)
+        .map(({ category }) => category)
         .reduce(
           (acc, curr) => (acc.indexOf(curr) === -1 ? acc.concat(curr) : acc),
           []
@@ -90,7 +95,9 @@
       const groupNewsByCategories = categories.reduce(
         (acc, curr) => ({
           ...acc,
-          [curr]: responseFromBackend.filter(({ type }) => type === curr),
+          [curr]: responseFromBackend.filter(
+            ({ category }) => category === curr
+          ),
         }),
         {}
       );
